@@ -12,3 +12,5 @@ const validation = () => {
 };
 
 inputRef.addEventListener('blur', validation);
+
+inputRef.addEventListener('focus', event => event.target.classList.remove('valid', 'invalid'));
